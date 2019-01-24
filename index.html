@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nashville Software School</title>
+  <link rel="stylesheet" href="powers.css">
+</head>
+
+<body>
+  <h1>Wonder Powers Activate!</h1>
+  <p>This exercise consisted of using JavaScript in order to manipulate the DOM.
+    Specifically using functions in order to alter the current class of the sections within the article
+    due to the stylesheet will alter the apperance of the text and background. 
+  </p>
+  <article id="powerList">
+    <section id="flight" class="power disabled">
+        Flight
+    </section>
+    <section id="mindreading" class="power disabled">
+        Mind Reading
+    </section>
+    <section id="xray" class="power disabled">
+        X-ray Vision
+    </section>
+  </article>
+
+  <button id="activate-flight" onclick="flightHandlerFunction ()">Activate Flight</button>
+  <button id="activate-mindreading" onclick="mindReadingFunction ()">Activate Mind Reading</button>
+  <button id="activate-xray" onclick="xRayFunction ()">Active X-ray Vision</button>
+
+  <button id="activate-all" onclick="enableAllFunctions ()">Active All Powers</button>
+  <button id="deactivate-all" onclick="disableAllFunctions ()">Deactive All Powers</button>
+
+
+  <script src="powers.js"></script>
+</body>
+</html>
